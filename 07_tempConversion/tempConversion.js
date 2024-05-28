@@ -4,7 +4,7 @@ const convertToCelsius = function(tempF) {
 };
 
 const convertToFahrenheit = function(tempC) {
-  let tempF =Number((tempC * 9 / 5 + 32).toFIxed(1))
+  let tempF =Number((tempC * 9 / 5 + 32).toFixed(1))
   return tempF;
 };
 

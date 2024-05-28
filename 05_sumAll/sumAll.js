@@ -3,11 +3,15 @@ const sumAll = function(int1, int2) {
     let max = Math.max(int1, int2);
     let sum = 0;
 
-    for (let i = min; i <= max; i++) {
-        sum += i;
+    if (min < 0) {
+        return "ERROR";
+    } else {
+        for (let i = min; i <= max; i++) {
+            sum += i;
+        }
+    
+        return sum;
     }
-
-    return sum;
 };
 
 // Do not edit below this line

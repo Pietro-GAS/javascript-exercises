@@ -1,9 +1,13 @@
 const repeatString = function(string, repeats) {
-    let finalString = "";
-    for (let i = 0; i < repeats; i++) {
-        finalString += string;
+    if (repeats < 0) {
+        return "ERROR";
+    } else {
+        let finalString = "";
+        for (let i = 0; i < repeats; i++) {
+            finalString += string;
+        }
+        return finalString;
     }
-    return finalString;
 };
 
 // Do not edit below this line

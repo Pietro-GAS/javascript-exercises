@@ -20,8 +20,9 @@ const power = function(a, b) {
 
 const factorial = function(a) {
 	let fact = 1;
-  for (let i = a; i > 0; i--)
+  for (let i = a; i > 0; i--) {
     fact *= i;
+  };
   return fact;
 };
 

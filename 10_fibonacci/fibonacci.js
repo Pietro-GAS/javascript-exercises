@@ -1,6 +1,9 @@
 const fibonacci = function(int) {
     let arr = [0, 1];
-    if (int <= 1) {
+    int = Number(int);
+    if (int < 0) {
+        return "OOPS";
+    } else if (int <= 1) {
         return arr[int];
     } else {
         for (let i = 2; i <= int; i++) {

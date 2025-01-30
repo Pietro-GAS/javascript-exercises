@@ -1,5 +1,6 @@
 const palindromes = function (str) {
-    str = str.replace(/[^\p{L}\p{N}]/gu, '') // remove every non-letter & non-number
+    // remove every non-letter & non-number and convert to lowercase
+    str = str.replace(/[^\p{L}\p{N}]/gu, '').toLowerCase();
     let arr = [];
     for(i = 0; i < str.length; i++) {
       if (str[i] == str[str.length-i-1]) {

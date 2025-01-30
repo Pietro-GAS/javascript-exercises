@@ -5,6 +5,11 @@ const getTheTitles = function(arr) {
     };
     return titles;
 };
+/* alternative solution
+
+titles = arr.map((book) => book.title);
+
+*/
 
 // Do not edit below this line
 module.exports = getTheTitles;

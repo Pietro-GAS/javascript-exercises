@@ -1,5 +1,5 @@
 const palindromes = function (str) {
-    str.replace(/[^\p{L}]/gu, ''); // remove every non-letter
+    str.replace(/[^\p{L}\p{N}]/gu, '') // remove every non-letter & non-number
     let arr = [];
     for(i = 0; i < str.length; i++) {
       if (str[i] == str[str.length-i-1]) {
